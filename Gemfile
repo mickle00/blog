@@ -8,6 +8,7 @@ gem 'rubygems-update', :require => nil
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'databasedotcom'
 
 # Use unicorn as the web server
 # gem 'unicorn'
