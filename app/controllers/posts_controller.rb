@@ -1,8 +1,10 @@
 class PostsController < ApplicationController
   # GET /posts
   # GET /posts.xml
+  @title = 'Posts'
   def index
     @posts = Post.all
+    @title = 'Posts'
 
     respond_to do |format|
       format.html # index.html.erb
@@ -14,7 +16,7 @@ class PostsController < ApplicationController
   # GET /posts/1.xml
   def show
     @post = Post.find(params[:id])
-
+    @title = 'Show Post'
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @post }
@@ -25,6 +27,7 @@ class PostsController < ApplicationController
   # GET /posts/new.xml
   def new
     @post = Post.new
+    @title = 'New Post'
 
     respond_to do |format|
       format.html # new.html.erb
@@ -35,12 +38,14 @@ class PostsController < ApplicationController
   # GET /posts/1/edit
   def edit
     @post = Post.find(params[:id])
+    @title = 'Edit Post'
   end
 
   # POST /posts
   # POST /posts.xml
   def create
     @post = Post.new(params[:post])
+    @title = 'New Post'
 
     respond_to do |format|
       if @post.save
