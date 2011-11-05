@@ -10,6 +10,9 @@ gem 'rubygems-update', :require => nil
 gem 'sqlite3'
 gem 'databasedotcom'
 
+gem 'omniauth', '0.2.0'
+gem 'httparty'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 

@@ -1,5 +1,7 @@
 Blog::Application.routes.draw do
 
+  get "sessions/create"
+
   resources :posts
   resources :users
 
@@ -8,6 +10,9 @@ Blog::Application.routes.draw do
   match '/about', :to => 'home#about'
   match '/help', :to => 'home#help'
   match '/signup', :to => 'users#new'
+  
+  match '/auth/:provider/callback', :to => 'sessions#create'
+  match '/auth/failure', :to => 'sessions#fail'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
