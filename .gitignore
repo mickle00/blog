@@ -2,4 +2,3 @@
 db/*.sqlite3
 log/*.log
 tmp/
-asf_rest_config.yml
