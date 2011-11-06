@@ -122,6 +122,9 @@ GEM
     rdoc (3.9.2)
     rest-client (1.6.7)
       mime-types (>= 1.16)
+    rforce (0.6)
+      builder (~> 2.0)
+      oauth (~> 0.4)
     ruby-openid (2.1.8)
     ruby-openid-apps-discovery (1.2.0)
       ruby-openid (>= 2.1.7)
@@ -143,5 +146,6 @@ DEPENDENCIES
   httparty
   omniauth (= 0.2.0)
   rails (= 3.0.10)
+  rforce
   rubygems-update
   sqlite3

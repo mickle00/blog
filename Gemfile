@@ -12,6 +12,7 @@ gem 'databasedotcom'
 
 gem 'omniauth', '0.2.0'
 gem 'httparty'
+gem 'rforce'
 
 # Use unicorn as the web server
 # gem 'unicorn'

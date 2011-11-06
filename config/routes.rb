@@ -11,8 +11,10 @@ Blog::Application.routes.draw do
   match '/help', :to => 'home#help'
   match '/signup', :to => 'users#new'
   
-  match '/auth/:provider/callback', :to => 'sessions#create'
-  match '/auth/failure', :to => 'sessions#fail'
+  #match '/auth/:provider/callback', :to => 'sessions#create'
+ # match '/auth/failure', :to => 'sessions#fail'
+ 
+  match '/accounts', :to => 'accounts#view'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
