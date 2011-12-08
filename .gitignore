@@ -3,3 +3,4 @@ db/*.sqlite3
 log/*.log
 tmp/
 /config/asf_rest_config.yml
+/config/initializers/databasecom.rb
